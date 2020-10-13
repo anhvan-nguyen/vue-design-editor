@@ -1,0 +1,8 @@
+app:
+  path: /app
+  name: app
+  component: ../components/EmptyRouterView.vue
+  redirect: 
+    name: designs
+  props: true
+  children:

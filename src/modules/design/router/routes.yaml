@@ -1,0 +1,4 @@
+home:
+  path: design
+  name: design
+  component: ../components/Design.vue

@@ -1,7 +1,14 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import './registerServiceWorker'
-import router from './router'
-import store from './store'
+import antd from '@/plugins/antd';
 
-createApp(App).use(store).use(router).mount('#app')
+import registerVueModule from '@/core';
+
+import { DesignModule } from '@/modules/design'
+
+// import '@/styles/main.scss';
+
+registerVueModule({
+  ...antd
+}, [
+  DesignModule
+]);
+
